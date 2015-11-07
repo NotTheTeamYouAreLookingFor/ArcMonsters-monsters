@@ -72,6 +72,7 @@ public class EmployeesTest {
         assertEquals(Employees.TeamType.SDK,emp2.getType());
         assertEquals(9923, emp2.getMaxHP());  //Checked this manually
         assertEquals(9923, emp2.getCurrentHP()); //Checked this manually
+
     }
 
     @org.junit.Test
