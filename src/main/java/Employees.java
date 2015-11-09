@@ -1,5 +1,8 @@
+import java.util.List;
+
 /**
  * Created by alex7370 on 11/5/2015.
+ * This is the monster class also know as employees since this will be loosely based on employees.
  */
 public class Employees {
     private int level;
@@ -11,6 +14,7 @@ public class Employees {
     private long currentHP;
     private long maxHP;
     private boolean alive;
+    private List<Skills> employeeSkills;
 
     Employees(String Name, long xp, TeamType TypeOfCharacter)
     {
