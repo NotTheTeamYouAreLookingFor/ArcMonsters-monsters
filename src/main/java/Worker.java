@@ -1,3 +1,10 @@
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.CountDownLatch;
+
 /**
  * Created by alex7370 on 11/5/2015.
  */
@@ -5,12 +12,14 @@ public class Worker {
     private int level;
     private long currentXP;
     private long nextXP;
-    public enum TeamType {DEV, HR, MANAGEMENT, FINANCIAL, DATAENTRY, ANALYST, IT};
+    public enum TeamType {DEV, HR, MANAGEMENT, FINANCIAL, DATAENTRY, ANALYST, IT, LEGAL};
     private TeamType EmpType;
     private String name;
     private long currentHP;
     private long maxHP;
     private boolean alive;
+    private List<Skills> skillsList = new ArrayList<Skills>();
+    private Firebase myFireBaseRef = new Firebase("https://testingnohe.firebaseio.com");
 
     Worker(String Name, long xp, TeamType TypeOfCharacter)
     {
@@ -132,5 +141,44 @@ public class Worker {
                 this.currentHP += changeInHP;
             }
         }
+    }
+
+    public void addSkill(Skills skill)
+    {
+        skillsList.add(skill);
+    }
+
+    public void removeSkill(int skillIndex)
+    {
+        skillsList.remove(skillIndex);
+    }
+
+    public Skills getSkill(int skillIndex)
+    {
+        return skillsList.get(skillIndex);
+    }
+
+    public int getSkillCount()
+    {
+        return skillsList.size();
+    }
+
+    public void backupToFirebase() throws InterruptedException {
+        final CountDownLatch done = new CountDownLatch(1);
+        myFireBaseRef.child("worker").push().setValue(this.skillsList, new Firebase.CompletionListener() {
+            @Override
+            public void onComplete(FirebaseError firebaseError, Firebase firebase) {
+                System.out.println("done");
+                done.countDown();
+            }
+        });
+        myFireBaseRef.child("worker").push().setValue(this, new Firebase.CompletionListener() {
+            @Override
+            public void onComplete(FirebaseError firebaseError, Firebase firebase) {
+                System.out.println("done");
+                done.countDown();
+            }
+        });
+        done.await();
     }
 }

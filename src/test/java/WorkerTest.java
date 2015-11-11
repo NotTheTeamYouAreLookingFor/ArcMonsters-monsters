@@ -5,10 +5,12 @@ import static org.junit.Assert.*;
  */
 public class WorkerTest {
     public Worker worker;
+    public Skills litigation;
 
     @org.junit.Before
     public void setUp() throws Exception {
         worker = new Worker();
+        litigation = new LitigateSkill("Litigation", 25, 0, 1);
     }
 
     @org.junit.After
@@ -95,5 +97,41 @@ public class WorkerTest {
         worker.adjustHP(55);
         assertEquals(true, worker.getAliveStatus());
         assertEquals(25, worker.getCurrentHP());
+    }
+
+    @org.junit.Test
+    public void testAddSkill() throws Exception
+    {
+        worker.addSkill(litigation);
+        assertEquals(litigation.getName(), (worker.getSkill(0)).getName());
+    }
+
+    @org.junit.Test
+    public void testremoveSkill() throws Exception
+    {
+        worker.addSkill(litigation);
+        worker.removeSkill(0);
+        assertEquals(0, worker.getSkillCount());
+    }
+
+    @org.junit.Test
+    public void testGetSkill() throws Exception
+    {
+        worker.addSkill(litigation);
+        assertEquals(litigation.getName(), (worker.getSkill(0)).getName());
+    }
+
+    @org.junit.Test
+    public void testGetSkillCount() throws Exception
+    {
+        worker.addSkill(litigation);
+        assertEquals(1, worker.getSkillCount());
+        worker.backupToFirebase();
+    }
+
+    @org.junit.Test
+    public void testBackupToFirebase() throws Exception
+    {
+        worker.backupToFirebase();
     }
 }
