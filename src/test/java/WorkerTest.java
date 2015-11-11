@@ -126,5 +126,12 @@ public class WorkerTest {
     {
         worker.addSkill(litigation);
         assertEquals(1, worker.getSkillCount());
+        worker.backupToFirebase();
+    }
+
+    @org.junit.Test
+    public void testBackupToFirebase() throws Exception
+    {
+        worker.backupToFirebase();
     }
 }

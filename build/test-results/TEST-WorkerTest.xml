@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WorkerTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2015-11-11T03:50:39" hostname="Alexanders-MacBook-Pro.local" time="0.009">
+<testsuite name="WorkerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-11-11T15:56:02" hostname="alexn" time="1.492">
   <properties/>
-  <testcase name="testGetLevel" classname="WorkerTest" time="0.002"/>
-  <testcase name="testGetMaxHP" classname="WorkerTest" time="0.0"/>
-  <testcase name="testGetSkill" classname="WorkerTest" time="0.0"/>
-  <testcase name="testGetSkillCount" classname="WorkerTest" time="0.0"/>
-  <testcase name="testConstructors" classname="WorkerTest" time="0.0"/>
-  <testcase name="testAddSkill" classname="WorkerTest" time="0.0"/>
-  <testcase name="testGetName" classname="WorkerTest" time="0.001"/>
-  <testcase name="testGetType" classname="WorkerTest" time="0.0"/>
-  <testcase name="testAdjustXP" classname="WorkerTest" time="0.0"/>
-  <testcase name="testAdjustHPPositive" classname="WorkerTest" time="0.001"/>
-  <testcase name="testAdjustHPNegative" classname="WorkerTest" time="0.0"/>
-  <testcase name="testGetAliveStatus" classname="WorkerTest" time="0.0"/>
-  <testcase name="testremoveSkill" classname="WorkerTest" time="0.0"/>
-  <testcase name="testGetCurrentHP" classname="WorkerTest" time="0.0"/>
-  <testcase name="testGetCurrentXP" classname="WorkerTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="testGetSkillCount" classname="WorkerTest" time="1.492"/>
+  <system-out><![CDATA[done
+done
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,5 +1,9 @@
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CountDownLatch;
 
 /**
  * Created by alex7370 on 11/5/2015.
@@ -15,6 +19,7 @@ public class Worker {
     private long maxHP;
     private boolean alive;
     private List<Skills> skillsList = new ArrayList<Skills>();
+    private Firebase myFireBaseRef = new Firebase("https://testingnohe.firebaseio.com");
 
     Worker(String Name, long xp, TeamType TypeOfCharacter)
     {
@@ -156,5 +161,24 @@ public class Worker {
     public int getSkillCount()
     {
         return skillsList.size();
+    }
+
+    public void backupToFirebase() throws InterruptedException {
+        final CountDownLatch done = new CountDownLatch(1);
+        myFireBaseRef.child("worker").push().setValue(this.skillsList, new Firebase.CompletionListener() {
+            @Override
+            public void onComplete(FirebaseError firebaseError, Firebase firebase) {
+                System.out.println("done");
+                done.countDown();
+            }
+        });
+        myFireBaseRef.child("worker").push().setValue(this, new Firebase.CompletionListener() {
+            @Override
+            public void onComplete(FirebaseError firebaseError, Firebase firebase) {
+                System.out.println("done");
+                done.countDown();
+            }
+        });
+        done.await();
     }
 }

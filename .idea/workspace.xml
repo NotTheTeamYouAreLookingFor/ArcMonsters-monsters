@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b311dec-4359-40f8-8b6e-24775a499e0f" name="Default" comment="Level cap of 99.  Test fails when putting in enough XP for level 100.  XP cap of 1098900 is when level 100 occurs.  Need to implement.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arcmon.iml" afterPath="$PROJECT_DIR$/arcmon.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Worker.java" afterPath="$PROJECT_DIR$/src/main/java/Worker.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/WorkerTest.java" afterPath="$PROJECT_DIR$/src/test/java/WorkerTest.java" />
     </list>
@@ -34,7 +36,20 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="arcmon" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+            </PATH>
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -43,77 +58,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Worker.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Worker.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Worker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.7631579">
+              <caret line="181" column="21" selection-start-line="181" selection-start-column="21" selection-end-line="181" selection-end-column="21" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#470#478#0" expanded="true" />
-                <element signature="e#838#839#0" expanded="true" />
-                <element signature="e#885#886#0" expanded="true" />
-                <element signature="e#916#917#0" expanded="true" />
-                <element signature="e#960#961#0" expanded="true" />
-                <element signature="e#1000#1001#0" expanded="true" />
-                <element signature="e#1044#1045#0" expanded="true" />
-                <element signature="e#1101#1102#0" expanded="true" />
-                <element signature="e#1148#1149#0" expanded="true" />
+                <element signature="method#Worker#0;class#Worker#0" expanded="false" />
+                <element signature="method#adjustXP#0;class#Worker#0" expanded="false" />
                 <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
                 <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
-                <element signature="e#2945#2946#0" expanded="true" />
-                <element signature="e#2982#2983#0" expanded="true" />
-                <element signature="e#3033#3034#0" expanded="true" />
-                <element signature="e#3078#3079#0" expanded="true" />
-                <element signature="e#3128#3129#0" expanded="true" />
-                <element signature="e#3177#3178#0" expanded="true" />
-                <element signature="e#3215#3216#0" expanded="true" />
-                <element signature="e#3255#3256#0" expanded="true" />
+                <element signature="method#onComplete#0;class#3670:3910" expanded="false" />
+                <element signature="class#3977:4217" expanded="false" />
+                <element signature="method#onComplete#0;class#3977:4217" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Skills.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Skills.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-              <folding>
-                <element signature="e#906#907#0" expanded="true" />
-                <element signature="e#938#939#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LitigateSkill.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/LitigateSkill.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LitigateSkillTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/LitigateSkillTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WorkerTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WorkerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/WorkerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25465837">
-              <caret line="112" column="28" selection-start-line="112" selection-start-column="28" selection-end-line="112" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="128" column="34" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
               <folding>
                 <element signature="docComment;class#WorkerTest#0" expanded="false" />
+                <element signature="method#setUp#0;class#WorkerTest#0" expanded="false" />
                 <element signature="method#tearDown#0;class#WorkerTest#0" expanded="false" />
                 <element signature="method#testGetLevel#0;class#WorkerTest#0" expanded="false" />
                 <element signature="method#testGetCurrentXP#0;class#WorkerTest#0" expanded="false" />
@@ -126,6 +96,9 @@
                 <element signature="method#testGetAliveStatus#0;class#WorkerTest#0" expanded="false" />
                 <element signature="method#testAdjustHPNegative#0;class#WorkerTest#0" expanded="false" />
                 <element signature="method#testAdjustHPPositive#0;class#WorkerTest#0" expanded="false" />
+                <element signature="method#testAddSkill#0;class#WorkerTest#0" expanded="false" />
+                <element signature="method#testremoveSkill#0;class#WorkerTest#0" expanded="false" />
+                <element signature="method#testGetSkill#0;class#WorkerTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -307,7 +280,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2894155916717" />
+        <entry key="$PROJECT_DIR$" value="2894334827553" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -320,6 +293,19 @@
                   <entry key="$PROJECT_DIR$">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-jvm/2.4.0/558e074f136fee609b8758480ecd00e286595137/firebase-client-jvm-2.4.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.2.2/3c8f6018eaa72d43b261181e801e6f8676c16ef6/jackson-databind-2.2.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.firebase/tubesock/0.0.12/6ec0bbd3e161a73ed672284b587fd32309a86d7a/tubesock-0.0.12.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.0.1/1d7d28fa738bdbfe4fbd895d9486308999bdf440/httpclient-4.0.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.2.2/285cb9c666f0f0f3dd8a1be04e1f457eb7b15113/jackson-annotations-2.2.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.2/d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b/jackson-core-2.2.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.0.1/e813b8722c387b22e1adccf7914729db09bcb4a9/httpcore-4.0.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.3/fd32786786e2adb664d5ecc965da47629dca14ba/commons-codec-1.3.jar" />
+                          </list>
+                        </option>
                         <option name="path" value="$PROJECT_DIR$" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
@@ -409,8 +395,9 @@
         <option value="$PROJECT_DIR$/src/test/java/LitigateSkillTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Skills.java" />
         <option value="$PROJECT_DIR$/src/main/java/LitigateSkill.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Worker.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/WorkerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Worker.java" />
       </list>
     </option>
   </component>
@@ -427,9 +414,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="829" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -456,7 +444,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -472,6 +459,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ArcMonsters-monsters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arcmon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArcMonsters-monsters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -514,6 +519,24 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arcmon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArcMonsters-monsters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -521,6 +544,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
@@ -562,32 +586,13 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.WorkerTest">
+  <component name="RunManager" selected="Gradle.testGetSkillCount">
     <configuration default="false" name="EmployeesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests EmployeesTest" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="cleanTest" />
-            <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="false" name="testConstructors" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;EmployeesTest.testConstructors&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -645,6 +650,25 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;LitigateSkillTest.testAction&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="cleanTest" />
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="testGetSkillCount" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;WorkerTest.testGetSkillCount&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -1070,18 +1094,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Gradle.EmployeesTest" />
-      <item index="1" class="java.lang.String" itemvalue="Gradle.testConstructors" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.WorkerTest" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.LitigateSkillTest" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.testAction" />
+      <item index="1" class="java.lang.String" itemvalue="Gradle.WorkerTest" />
+      <item index="2" class="java.lang.String" itemvalue="Gradle.LitigateSkillTest" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.testAction" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.testGetSkillCount" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.WorkerTest" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.LitigateSkillTest" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.testAction" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.EmployeesTest" />
-        <item index="4" class="java.lang.String" itemvalue="Gradle.testConstructors" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.testGetSkillCount" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.WorkerTest" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.LitigateSkillTest" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.testAction" />
+        <item index="4" class="java.lang.String" itemvalue="Gradle.EmployeesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1111,6 +1135,7 @@
       <workItem from="1447165025751" duration="111000" />
       <workItem from="1447169406699" duration="298000" />
       <workItem from="1447210280600" duration="3553000" />
+      <workItem from="1447256825485" duration="1616000" />
     </task>
     <task id="LOCAL-00001" summary=":+1: adjusted some tests to account for constructors.">
       <created>1446839608205</created>
@@ -1146,21 +1171,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LitigateSkillTest - 2015.11.10 at 22h 34m 22s.xml">
-      <configuration name="LitigateSkillTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="LitigateSkillTest - 2015.11.10 at 22h 34m 50s.xml">
-      <configuration name="LitigateSkillTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="LitigateSkillTest - 2015.11.10 at 22h 35m 51s.xml">
-      <configuration name="LitigateSkillTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="LitigateSkillTest - 2015.11.10 at 22h 36m 23s.xml">
-      <configuration name="LitigateSkillTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="WorkerTest - 2015.11.10 at 22h 46m 06s.xml">
-      <configuration name="WorkerTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="WorkerTest - 2015.11.10 at 22h 46m 39s.xml">
       <configuration name="WorkerTest" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -1173,29 +1183,44 @@
     <history-entry file="WorkerTest - 2015.11.10 at 22h 50m 40s.xml">
       <configuration name="WorkerTest" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="WorkerTest - 2015.11.11 at 10h 51m 58s.xml">
+      <configuration name="WorkerTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
     <history-entry file="testAction - 2015.11.10 at 22h 33m 40s.xml">
       <configuration name="testAction" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="testGetSkillCount - 2015.11.11 at 10h 53m 14s.xml">
+      <configuration name="testGetSkillCount" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="testGetSkillCount - 2015.11.11 at 10h 54m 22s.xml">
+      <configuration name="testGetSkillCount" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="testGetSkillCount - 2015.11.11 at 10h 55m 12s.xml">
+      <configuration name="testGetSkillCount" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="testGetSkillCount - 2015.11.11 at 10h 56m 04s.xml">
+      <configuration name="testGetSkillCount" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12193000" />
+    <option name="totallyTimeSpent" value="13809000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="829" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3276316" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3171226" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25208333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1229,7 +1254,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1241,39 +1266,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Worker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="80" selection-start-line="7" selection-start-column="80" selection-end-line="7" selection-end-column="80" />
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#470#478#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="method#Worker#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustXP#0;class#Worker#0" expanded="false" />
             <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
             <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
-            <element signature="e#2945#2946#0" expanded="true" />
-            <element signature="e#2982#2983#0" expanded="true" />
-            <element signature="e#3033#3034#0" expanded="true" />
-            <element signature="e#3078#3079#0" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
-            <element signature="e#3177#3178#0" expanded="true" />
-            <element signature="e#3215#3216#0" expanded="true" />
-            <element signature="e#3255#3256#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Skills.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#906#907#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
+            <element signature="method#onComplete#0;class#3670:3910" expanded="false" />
+            <element signature="class#3977:4217" expanded="false" />
+            <element signature="method#onComplete#0;class#3977:4217" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1281,9 +1282,10 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/WorkerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#WorkerTest#0" expanded="false" />
+            <element signature="method#setUp#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#tearDown#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetLevel#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetCurrentXP#0;class#WorkerTest#0" expanded="false" />
@@ -1296,6 +1298,9 @@
             <element signature="method#testGetAliveStatus#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPNegative#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPPositive#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAddSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testremoveSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetSkill#0;class#WorkerTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1305,37 +1310,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="80" selection-start-line="7" selection-start-column="80" selection-end-line="7" selection-end-column="80" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#470#478#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="method#Worker#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustXP#0;class#Worker#0" expanded="false" />
             <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
             <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
-            <element signature="e#2945#2946#0" expanded="true" />
-            <element signature="e#2982#2983#0" expanded="true" />
-            <element signature="e#3033#3034#0" expanded="true" />
-            <element signature="e#3078#3079#0" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
-            <element signature="e#3177#3178#0" expanded="true" />
-            <element signature="e#3215#3216#0" expanded="true" />
-            <element signature="e#3255#3256#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Skills.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#906#907#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
+            <element signature="method#onComplete#0;class#3670:3910" expanded="false" />
+            <element signature="class#3977:4217" expanded="false" />
+            <element signature="method#onComplete#0;class#3977:4217" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1346,6 +1327,7 @@
           <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#WorkerTest#0" expanded="false" />
+            <element signature="method#setUp#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#tearDown#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetLevel#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetCurrentXP#0;class#WorkerTest#0" expanded="false" />
@@ -1358,6 +1340,9 @@
             <element signature="method#testGetAliveStatus#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPNegative#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPPositive#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAddSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testremoveSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetSkill#0;class#WorkerTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1367,37 +1352,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="80" selection-start-line="7" selection-start-column="80" selection-end-line="7" selection-end-column="80" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#470#478#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="method#Worker#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustXP#0;class#Worker#0" expanded="false" />
             <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
             <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
-            <element signature="e#2945#2946#0" expanded="true" />
-            <element signature="e#2982#2983#0" expanded="true" />
-            <element signature="e#3033#3034#0" expanded="true" />
-            <element signature="e#3078#3079#0" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
-            <element signature="e#3177#3178#0" expanded="true" />
-            <element signature="e#3215#3216#0" expanded="true" />
-            <element signature="e#3255#3256#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Skills.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#906#907#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
+            <element signature="method#onComplete#0;class#3670:3910" expanded="false" />
+            <element signature="class#3977:4217" expanded="false" />
+            <element signature="method#onComplete#0;class#3977:4217" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1408,6 +1369,7 @@
           <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#WorkerTest#0" expanded="false" />
+            <element signature="method#setUp#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#tearDown#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetLevel#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetCurrentXP#0;class#WorkerTest#0" expanded="false" />
@@ -1420,6 +1382,9 @@
             <element signature="method#testGetAliveStatus#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPNegative#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPPositive#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAddSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testremoveSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetSkill#0;class#WorkerTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1427,28 +1392,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Worker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="7" column="80" selection-start-line="7" selection-start-column="80" selection-end-line="7" selection-end-column="80" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#470#478#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="method#Worker#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustXP#0;class#Worker#0" expanded="false" />
             <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
             <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
-            <element signature="e#2945#2946#0" expanded="true" />
-            <element signature="e#2982#2983#0" expanded="true" />
-            <element signature="e#3033#3034#0" expanded="true" />
-            <element signature="e#3078#3079#0" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
-            <element signature="e#3177#3178#0" expanded="true" />
-            <element signature="e#3215#3216#0" expanded="true" />
-            <element signature="e#3255#3256#0" expanded="true" />
+            <element signature="method#onComplete#0;class#3670:3910" expanded="false" />
+            <element signature="class#3977:4217" expanded="false" />
+            <element signature="method#onComplete#0;class#3977:4217" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1459,6 +1411,7 @@
           <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#WorkerTest#0" expanded="false" />
+            <element signature="method#setUp#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#tearDown#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetLevel#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetCurrentXP#0;class#WorkerTest#0" expanded="false" />
@@ -1471,6 +1424,9 @@
             <element signature="method#testGetAliveStatus#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPNegative#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPPositive#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAddSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testremoveSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetSkill#0;class#WorkerTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1480,26 +1436,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#470#478#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="method#Worker#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustXP#0;class#Worker#0" expanded="false" />
             <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
             <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
-            <element signature="e#2945#2946#0" expanded="true" />
-            <element signature="e#2982#2983#0" expanded="true" />
-            <element signature="e#3033#3034#0" expanded="true" />
-            <element signature="e#3078#3079#0" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
-            <element signature="e#3177#3178#0" expanded="true" />
-            <element signature="e#3215#3216#0" expanded="true" />
-            <element signature="e#3255#3256#0" expanded="true" />
+            <element signature="method#onComplete#0;class#3670:3910" expanded="false" />
+            <element signature="class#3977:4217" expanded="false" />
+            <element signature="method#onComplete#0;class#3977:4217" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1510,6 +1453,7 @@
           <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#WorkerTest#0" expanded="false" />
+            <element signature="method#setUp#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#tearDown#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetLevel#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetCurrentXP#0;class#WorkerTest#0" expanded="false" />
@@ -1522,6 +1466,9 @@
             <element signature="method#testGetAliveStatus#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPNegative#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPPositive#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAddSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testremoveSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetSkill#0;class#WorkerTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1531,26 +1478,55 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#470#478#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="method#Worker#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustXP#0;class#Worker#0" expanded="false" />
             <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
             <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
-            <element signature="e#2945#2946#0" expanded="true" />
-            <element signature="e#2982#2983#0" expanded="true" />
-            <element signature="e#3033#3034#0" expanded="true" />
-            <element signature="e#3078#3079#0" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
-            <element signature="e#3177#3178#0" expanded="true" />
-            <element signature="e#3215#3216#0" expanded="true" />
-            <element signature="e#3255#3256#0" expanded="true" />
+            <element signature="method#onComplete#0;class#3670:3910" expanded="false" />
+            <element signature="class#3977:4217" expanded="false" />
+            <element signature="method#onComplete#0;class#3977:4217" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/WorkerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#WorkerTest#0" expanded="false" />
+            <element signature="method#setUp#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#tearDown#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetLevel#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetCurrentXP#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAdjustXP#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetType#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetName#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetCurrentHP#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetMaxHP#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testConstructors#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetAliveStatus#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAdjustHPNegative#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAdjustHPPositive#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAddSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testremoveSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetSkill#0;class#WorkerTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Worker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#Worker#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustXP#0;class#Worker#0" expanded="false" />
+            <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
+            <element signature="method#onComplete#0;class#3670:3910" expanded="false" />
+            <element signature="class#3977:4217" expanded="false" />
+            <element signature="method#onComplete#0;class#3977:4217" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1561,6 +1537,7 @@
           <caret line="58" column="52" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
           <folding>
             <element signature="docComment;class#WorkerTest#0" expanded="false" />
+            <element signature="method#setUp#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#tearDown#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetLevel#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetCurrentXP#0;class#WorkerTest#0" expanded="false" />
@@ -1573,6 +1550,9 @@
             <element signature="method#testGetAliveStatus#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPNegative#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPPositive#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAddSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testremoveSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetSkill#0;class#WorkerTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1582,26 +1562,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#470#478#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="method#Worker#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustXP#0;class#Worker#0" expanded="false" />
             <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
             <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
-            <element signature="e#2945#2946#0" expanded="true" />
-            <element signature="e#2982#2983#0" expanded="true" />
-            <element signature="e#3033#3034#0" expanded="true" />
-            <element signature="e#3078#3079#0" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
-            <element signature="e#3177#3178#0" expanded="true" />
-            <element signature="e#3215#3216#0" expanded="true" />
-            <element signature="e#3255#3256#0" expanded="true" />
+            <element signature="method#onComplete#0;class#3670:3910" expanded="false" />
+            <element signature="class#3977:4217" expanded="false" />
+            <element signature="method#onComplete#0;class#3977:4217" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1612,6 +1579,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#WorkerTest#0" expanded="false" />
+            <element signature="method#setUp#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#tearDown#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetLevel#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetCurrentXP#0;class#WorkerTest#0" expanded="false" />
@@ -1624,6 +1592,9 @@
             <element signature="method#testGetAliveStatus#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPNegative#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPPositive#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAddSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testremoveSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetSkill#0;class#WorkerTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1633,26 +1604,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#470#478#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="method#Worker#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustXP#0;class#Worker#0" expanded="false" />
             <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
             <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
-            <element signature="e#2945#2946#0" expanded="true" />
-            <element signature="e#2982#2983#0" expanded="true" />
-            <element signature="e#3033#3034#0" expanded="true" />
-            <element signature="e#3078#3079#0" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
-            <element signature="e#3177#3178#0" expanded="true" />
-            <element signature="e#3215#3216#0" expanded="true" />
-            <element signature="e#3255#3256#0" expanded="true" />
+            <element signature="method#onComplete#0;class#3670:3910" expanded="false" />
+            <element signature="class#3977:4217" expanded="false" />
+            <element signature="method#onComplete#0;class#3977:4217" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1663,6 +1621,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#WorkerTest#0" expanded="false" />
+            <element signature="method#setUp#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#tearDown#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetLevel#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetCurrentXP#0;class#WorkerTest#0" expanded="false" />
@@ -1675,6 +1634,9 @@
             <element signature="method#testGetAliveStatus#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPNegative#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPPositive#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAddSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testremoveSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetSkill#0;class#WorkerTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1684,26 +1646,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#470#478#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="method#Worker#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustXP#0;class#Worker#0" expanded="false" />
             <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
             <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
-            <element signature="e#2945#2946#0" expanded="true" />
-            <element signature="e#2982#2983#0" expanded="true" />
-            <element signature="e#3033#3034#0" expanded="true" />
-            <element signature="e#3078#3079#0" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
-            <element signature="e#3177#3178#0" expanded="true" />
-            <element signature="e#3215#3216#0" expanded="true" />
-            <element signature="e#3255#3256#0" expanded="true" />
+            <element signature="method#onComplete#0;class#3670:3910" expanded="false" />
+            <element signature="class#3977:4217" expanded="false" />
+            <element signature="method#onComplete#0;class#3977:4217" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1713,26 +1662,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="91" column="34" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#470#478#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="method#Worker#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustXP#0;class#Worker#0" expanded="false" />
             <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
             <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
-            <element signature="e#2945#2946#0" expanded="true" />
-            <element signature="e#2982#2983#0" expanded="true" />
-            <element signature="e#3033#3034#0" expanded="true" />
-            <element signature="e#3078#3079#0" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
-            <element signature="e#3177#3178#0" expanded="true" />
-            <element signature="e#3215#3216#0" expanded="true" />
-            <element signature="e#3255#3256#0" expanded="true" />
+            <element signature="method#onComplete#0;class#3670:3910" expanded="false" />
+            <element signature="class#3977:4217" expanded="false" />
+            <element signature="method#onComplete#0;class#3977:4217" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1743,6 +1679,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#WorkerTest#0" expanded="false" />
+            <element signature="method#setUp#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#tearDown#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetLevel#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetCurrentXP#0;class#WorkerTest#0" expanded="false" />
@@ -1755,6 +1692,9 @@
             <element signature="method#testGetAliveStatus#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPNegative#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPPositive#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAddSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testremoveSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetSkill#0;class#WorkerTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1764,26 +1704,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#470#478#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="method#Worker#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustXP#0;class#Worker#0" expanded="false" />
             <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
             <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
-            <element signature="e#2945#2946#0" expanded="true" />
-            <element signature="e#2982#2983#0" expanded="true" />
-            <element signature="e#3033#3034#0" expanded="true" />
-            <element signature="e#3078#3079#0" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
-            <element signature="e#3177#3178#0" expanded="true" />
-            <element signature="e#3215#3216#0" expanded="true" />
-            <element signature="e#3255#3256#0" expanded="true" />
+            <element signature="method#onComplete#0;class#3670:3910" expanded="false" />
+            <element signature="class#3977:4217" expanded="false" />
+            <element signature="method#onComplete#0;class#3977:4217" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1794,6 +1721,7 @@
           <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="42" />
           <folding>
             <element signature="docComment;class#WorkerTest#0" expanded="false" />
+            <element signature="method#setUp#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#tearDown#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetLevel#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetCurrentXP#0;class#WorkerTest#0" expanded="false" />
@@ -1806,6 +1734,9 @@
             <element signature="method#testGetAliveStatus#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPNegative#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPPositive#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAddSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testremoveSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetSkill#0;class#WorkerTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1815,26 +1746,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#470#478#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="method#Worker#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustXP#0;class#Worker#0" expanded="false" />
             <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
             <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
-            <element signature="e#2945#2946#0" expanded="true" />
-            <element signature="e#2982#2983#0" expanded="true" />
-            <element signature="e#3033#3034#0" expanded="true" />
-            <element signature="e#3078#3079#0" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
-            <element signature="e#3177#3178#0" expanded="true" />
-            <element signature="e#3215#3216#0" expanded="true" />
-            <element signature="e#3255#3256#0" expanded="true" />
+            <element signature="method#onComplete#0;class#3670:3910" expanded="false" />
+            <element signature="class#3977:4217" expanded="false" />
+            <element signature="method#onComplete#0;class#3977:4217" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1845,6 +1763,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#WorkerTest#0" expanded="false" />
+            <element signature="method#setUp#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#tearDown#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetLevel#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetCurrentXP#0;class#WorkerTest#0" expanded="false" />
@@ -1857,6 +1776,9 @@
             <element signature="method#testGetAliveStatus#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPNegative#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPPositive#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAddSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testremoveSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetSkill#0;class#WorkerTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1866,26 +1788,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#470#478#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="method#Worker#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustXP#0;class#Worker#0" expanded="false" />
             <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
             <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
-            <element signature="e#2945#2946#0" expanded="true" />
-            <element signature="e#2982#2983#0" expanded="true" />
-            <element signature="e#3033#3034#0" expanded="true" />
-            <element signature="e#3078#3079#0" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
-            <element signature="e#3177#3178#0" expanded="true" />
-            <element signature="e#3215#3216#0" expanded="true" />
-            <element signature="e#3255#3256#0" expanded="true" />
+            <element signature="method#onComplete#0;class#3670:3910" expanded="false" />
+            <element signature="class#3977:4217" expanded="false" />
+            <element signature="method#onComplete#0;class#3977:4217" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1909,26 +1818,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#470#478#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="method#Worker#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustXP#0;class#Worker#0" expanded="false" />
             <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
             <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
-            <element signature="e#2945#2946#0" expanded="true" />
-            <element signature="e#2982#2983#0" expanded="true" />
-            <element signature="e#3033#3034#0" expanded="true" />
-            <element signature="e#3078#3079#0" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
-            <element signature="e#3177#3178#0" expanded="true" />
-            <element signature="e#3215#3216#0" expanded="true" />
-            <element signature="e#3255#3256#0" expanded="true" />
+            <element signature="method#onComplete#0;class#3670:3910" expanded="false" />
+            <element signature="class#3977:4217" expanded="false" />
+            <element signature="method#onComplete#0;class#3977:4217" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1939,6 +1835,7 @@
           <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
           <folding>
             <element signature="docComment;class#WorkerTest#0" expanded="false" />
+            <element signature="method#setUp#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#tearDown#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetLevel#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetCurrentXP#0;class#WorkerTest#0" expanded="false" />
@@ -1951,14 +1848,10 @@
             <element signature="method#testGetAliveStatus#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPNegative#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPPositive#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAddSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testremoveSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetSkill#0;class#WorkerTest#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24501109">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1969,68 +1862,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/LitigateSkillTest.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Worker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#470#478#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
-            <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
-            <element signature="e#2945#2946#0" expanded="true" />
-            <element signature="e#2982#2983#0" expanded="true" />
-            <element signature="e#3033#3034#0" expanded="true" />
-            <element signature="e#3078#3079#0" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
-            <element signature="e#3177#3178#0" expanded="true" />
-            <element signature="e#3215#3216#0" expanded="true" />
-            <element signature="e#3255#3256#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Skills.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-          <folding>
-            <element signature="e#906#907#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LitigateSkill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        <state vertical-scroll-proportion="-8.185185">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/WorkerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25465837">
-          <caret line="112" column="28" selection-start-line="112" selection-start-column="28" selection-end-line="112" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="128" column="34" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
           <folding>
             <element signature="docComment;class#WorkerTest#0" expanded="false" />
+            <element signature="method#setUp#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#tearDown#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetLevel#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testGetCurrentXP#0;class#WorkerTest#0" expanded="false" />
@@ -2043,6 +1889,25 @@
             <element signature="method#testGetAliveStatus#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPNegative#0;class#WorkerTest#0" expanded="false" />
             <element signature="method#testAdjustHPPositive#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAddSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testremoveSkill#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetSkill#0;class#WorkerTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Worker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7631579">
+          <caret line="181" column="21" selection-start-line="181" selection-start-column="21" selection-end-line="181" selection-end-column="21" />
+          <folding>
+            <element signature="method#Worker#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustXP#0;class#Worker#0" expanded="false" />
+            <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
+            <element signature="method#onComplete#0;class#3670:3910" expanded="false" />
+            <element signature="class#3977:4217" expanded="false" />
+            <element signature="method#onComplete#0;class#3977:4217" expanded="false" />
           </folding>
         </state>
       </provider>
