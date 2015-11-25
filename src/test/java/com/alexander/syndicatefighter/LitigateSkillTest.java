@@ -1,7 +1,8 @@
 package com.alexander.syndicatefighter;
 
-import com.alexander.syndicatefighter.LitigateSkill;
-import com.alexander.syndicatefighter.Worker;
+import com.alexander.syndicatefighter.Skills.LitigateSkill;
+import com.alexander.syndicatefighter.Worker.Worker;
+import com.alexander.syndicatefighter.Worker.TeamType;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -18,8 +19,8 @@ public class LitigateSkillTest {
 
     @Before
     public void setUp() throws Exception {
-        myEmployee = new Worker("Monster", 256, Worker.TeamType.LEGAL);
-        enemyEmployee = new Worker("GIANT", 25, Worker.TeamType.FINANCIAL);
+        myEmployee = new Worker("Monster", 256, TeamType.LEGAL);
+        enemyEmployee = new Worker("GIANT", 25, TeamType.FINANCIAL);
     }
 
     @After

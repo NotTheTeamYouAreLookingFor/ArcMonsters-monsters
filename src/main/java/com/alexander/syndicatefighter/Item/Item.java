@@ -1,4 +1,4 @@
-package com.alexander.syndicatefighter;
+package com.alexander.syndicatefighter.Item;
 
 /**
  * Created by mohi7253 on 11/18/2015.

@@ -1,6 +1,6 @@
-package com.alexander.syndicatefighter;
+package com.alexander.syndicatefighter.Skills;
 
-import com.alexander.syndicatefighter.Skills;
+import com.alexander.syndicatefighter.Worker.Worker;
 
 /**
  * Created by alexandernohe on 11/10/15.

@@ -1,6 +1,6 @@
-package com.alexander.syndicatefighter;
+package com.alexander.syndicatefighter.Worker;
 
-import com.alexander.syndicatefighter.Skills;
+import com.alexander.syndicatefighter.Skills.Skills;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,6 @@ public class Worker {
     private int level;
     private long currentXP;
     private long nextXP;
-    public enum TeamType {DEV, HR, MANAGEMENT, FINANCIAL, DATAENTRY, ANALYST, IT, LEGAL};
     private TeamType EmpType;
     private String name;
     private long currentHP;
