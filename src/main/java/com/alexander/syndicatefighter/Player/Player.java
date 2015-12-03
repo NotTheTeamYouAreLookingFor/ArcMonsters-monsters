@@ -2,12 +2,15 @@ package com.alexander.syndicatefighter.Player;
 
 import com.alexander.syndicatefighter.Backpack;
 import com.alexander.syndicatefighter.Worker.Worker;
+import com.sun.org.apache.bcel.internal.generic.RETURN;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.google.gson.Gson;
 
 public class Player {
     private long id;
+    private String email;
     private String name;
     private Gender gender;
     private long cash;
@@ -20,18 +23,18 @@ public class Player {
     //region Constructors
     public Player()
     {
-        //TODO: create a default avatar
-        this(123, "default avatar");      //TODO: auto increment for ID in database
+        this(123, "player@test.com", "Newplayer Changeyourname", "DefaultAvatar");      //TODO: 1)auto increment for ID in database, 2)default avatar and email
     }
 
-    public Player(long id, String avatar)
+    public Player(long id,String email, String name, String avatar)
     {
-        this(id, "Newplayer Changeyourname", Gender.Neither, 0L, Status.New, new Backpack(), new ArrayList<Worker>(), avatar);
+        this(id, email, name, Gender.Neither, 0L, Status.New, new Backpack(), new ArrayList<Worker>(), avatar);
     }
 
-    public Player(long id, String name, Gender gender, long cash, Status status, Backpack backpack, List<Worker> workerList, String avatar)
+    public Player(long id, String email, String name, Gender gender, long cash, Status status, Backpack backpack, List<Worker> workerList, String avatar)
     {
         this.id = id;
+        this.email = email;
         this.name = name;
         this.gender = gender;
         this.cash = cash;
@@ -43,6 +46,26 @@ public class Player {
     //endregion
 
     //region Public Methods for Properties
+    public long getId()
+    {
+        return this.id;
+    }
+
+    public void setId(long id)
+    {
+        this.id = id;
+    }
+
+    public String getEmail()
+    {
+        return this.email;
+    }
+
+    public void setEmail(String email)
+    {
+        this.email = email;
+    }
+
     public String getName()
     {
         return this.name;
@@ -141,8 +164,11 @@ public class Player {
 
 
 
-    // ??? Don't understand what is this for
-    private void storeToJSON()
-    {}
+    public String toJSON()
+    {
+        Gson gson = new Gson();
+        String jsonStr = gson.toJson(this);
+        return jsonStr;
+    }
 
 }

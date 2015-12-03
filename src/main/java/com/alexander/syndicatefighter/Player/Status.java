@@ -10,5 +10,5 @@ public enum Status
     Normal,     //can start a battle with me
     InBattle,       //in battle right now
     DoNotDisturb,        //cannot start a battle with me
-    Dead        //well, do not need explanation for this one, right?
+    InActive        //my account is not active, need to be activated by admin
 }
