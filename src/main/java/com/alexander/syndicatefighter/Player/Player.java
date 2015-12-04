@@ -6,6 +6,7 @@ import com.sun.org.apache.bcel.internal.generic.RETURN;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import com.google.gson.Gson;
 
 public class Player {
@@ -21,18 +22,15 @@ public class Player {
 
 
     //region Constructors
-    public Player()
-    {
+    public Player() {
         this(123, "player@test.com", "Newplayer Changeyourname", "DefaultAvatar");      //TODO: 1)auto increment for ID in database, 2)default avatar and email
     }
 
-    public Player(long id,String email, String name, String avatar)
-    {
+    public Player(long id, String email, String name, String avatar) {
         this(id, email, name, Gender.Neither, 0L, Status.New, new Backpack(), new ArrayList<Worker>(), avatar);
     }
 
-    public Player(long id, String email, String name, Gender gender, long cash, Status status, Backpack backpack, List<Worker> workerList, String avatar)
-    {
+    public Player(long id, String email, String name, Gender gender, long cash, Status status, Backpack backpack, List<Worker> workerList, String avatar) {
         this.id = id;
         this.email = email;
         this.name = name;
@@ -46,126 +44,111 @@ public class Player {
     //endregion
 
     //region Public Methods for Properties
-    public long getId()
-    {
+    public long getId() {
         return this.id;
     }
 
-    public void setId(long id)
-    {
+    public void setId(long id) {
         this.id = id;
     }
 
-    public String getEmail()
-    {
+    public String getEmail() {
         return this.email;
     }
 
-    public void setEmail(String email)
-    {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    public String getName()
-    {
+    public String getName() {
         return this.name;
     }
 
-    public void setName(String name)
-    {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public Gender getGender()
-    {
+    public Gender getGender() {
         return this.gender;
     }
 
-    public void setGender(Gender gender)
-    {
+    public void setGender(Gender gender) {
         this.gender = gender;
     }
 
-    public long getCash()
-    {
+    public long getCash() {
         return this.cash;
     }
 
-    public void setCash(long cash)
-    {
-        this.cash = cash;
+    public void setCash(long cash) {
+        this.cash = cash < 0 ? 0 : cash;
     }
 
-    public void increaseCash(long add)
-    {
-        this.cash += add;
+    public void increaseCash(long increase) {
+        if (increase >= 0)
+            this.cash += increase;
+        else
+            //if add <0 , then call decrease
+            decreaseCash(-increase);
     }
 
-    public void decreaseCash(long minus)
-    {
-        this.cash -= minus;
+    public void decreaseCash(long decrease) {
+        this.cash -= decrease;
         //If now cash is below 0, then set it to 0
         this.cash = this.cash < 0 ? 0 : this.cash;
     }
 
-    public Status getStatus()
-    {
+    public Status getStatus() {
         return this.status;
     }
 
-    public void setStatus(Status status)
-    {
+    public void setStatus(Status status) {
         this.status = status;
     }
 
-    public String getAvatar()
-    {
+    public String getAvatar() {
         return this.avatar;
     }
 
-    public void setAvatar(String avatar)
-    {
+    public void setAvatar(String avatar) {
         this.avatar = avatar;
     }
 
-    public Backpack getBackpack()
-    {
+    public Backpack getBackpack() {
         return this.backpack;
     }
 
-    public void setBackpack(Backpack backpack)
-    {
+    public void setBackpack(Backpack backpack) {
         this.backpack = backpack;
     }
 
-    public List<Worker> getWorkerList()
-    {
+    public List<Worker> getWorkerList() {
         return this.workerList;
     }
 
-    public void setWorkerList(List<Worker> workerList)
-    {
+    public void setWorkerList(List<Worker> workerList) {
         this.workerList = workerList;
     }
 
-    public void addWorker(Worker worker)
-    {
-        this.workerList.add(worker);
-    }
-
-    public Worker getWorkerAtIndex(int i)
-    {
-        return workerList.get(i);
-    }
-
-    //todo: expose more methods for workerlist
-
     //endregion
 
+    public void activate() {
+        try {
+            this.status = Status.Normal;
+            //what if user was InBattle or DoNotDisturb? Do we use this method to force user back to normal or just leave it?
+        } catch (Exception ex) {
+        }
+    }
 
+    public void deactivate() {
+        this.status = Status.InActive;
+    }
 
-    public String toJSON()
-    {
+    public boolean canBattle() {
+        return this.status == Status.Normal;
+    }
+
+    public String toJSON() {
         Gson gson = new Gson();
         String jsonStr = gson.toJson(this);
         return jsonStr;
